@@ -18,17 +18,18 @@ public class UseAccount {
         yourAccount.address = "bulcin";
         yourAccount.balance = 10.99;
 
-        out.print (myAccount.name);
-        out.print (" (");
-        out.print (myAccount.address);
-        out.print (") has $");
-        out.print (myAccount.balance);
-        out.println ();
+        myAccount.display();
 
-        out.print(yourAccount.name) ;
-        out.print(" (");
-        out.print(yourAccount.address);
-        out.print(") has $");
-        out.print(yourAccount.balance);
+        out.print(" plus $");
+        out.print(myAccount.getInterest(5.00));
+        out.println(" interest ");
+        yourAccount.display();
+
+        double yourInterestRate = 7.00;
+        out.print(" plus $");
+        double yourInterestAmount =
+                yourAccount.getInterest(yourInterestRate);
+        out.print(yourInterestAmount);
+        out.println(" interest ");
     }
 }
