@@ -35,8 +35,6 @@ public class Mahasiswa extends JFrame {
                 int tlBulan = cbBulan.getSelectedIndex() + 1;
                 int tlTahun = Integer.parseInt((String) cbTahun.getSelectedItem());
                 String alamat = textFieldAlamat.getText();
-                //String usia = String.valueOf(tahunSkrng - Integer.parseInt((String) cbTahun.getSelectedItem()));
-                //String usiaBulan = String.valueOf(bulanSkrng - Integer.parseInt((String) cbBulan.getSelectedItem()));
 
                 LocalDate tanggalSekarang = LocalDate.now ();
                 LocalDate tanggalLahirPengguna = LocalDate.of(tlTahun, tlBulan, tlTanggal);
